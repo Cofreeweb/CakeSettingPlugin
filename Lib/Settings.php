@@ -110,6 +110,8 @@ class Settings
         )
     ));
     
+    $data = array();
+    
     foreach( $results as $result)
     {
       $data [$result ['Setting']['plugin']][$result ['Setting']['model']][$result ['Setting']['key']] = $result ['Setting']['value'];
